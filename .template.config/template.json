@@ -1,0 +1,12 @@
+{
+    "author": "Vikram Nadig",
+    "classifications": [ "Web" ], 
+    "name": "React Typescript Starter web with MVC",
+    "identity": "ReactTypescript.StarterWeb",         
+    "shortName": "react-mvc-ts",                 // You can create the project using this short name instead of the one above.
+    "tags": {
+      "language": "[C#],Typescript"                       // Specify that this template is in C#.
+    },
+    "sourceName": "ReactTypescript.StarterWeb",      // Will replace the string 'SayedHa.StarterWe' with the value provided via -n.
+    "preferNameDirectory":"true"
+  }
