@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>react_template_core</RootNamespace>
+  </PropertyGroup> -->
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>ComparisonTech.Utility.Templates</PackageId>
+    <Title>ComparisonTech Templates</Title>
+    <Authors>Me</Authors>
+    <Description>Templates to use when creating an new mvc react application with typescript</Description>
+    <PackageTags>dotnet-new;templates;react;typescript</PackageTags>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />    
+  </ItemGroup>
+
+</Project>
