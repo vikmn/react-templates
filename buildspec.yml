@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 2.2
+  build:
+    commands:
+      - dotnet restore
+      - dotnet pack --no-build --output nupkgs
+      - cd nupkgs
+      - dotnet nuget push react-mvc.templates.1.0.0.nupkg -k oy2k5l2zzazqdvooajnqstd7f723hdnutdlltkulqcvarm -s https://api.nuget.org/v3/index.json
+artifacts:
+  files:
+    - '**/nupkgs/*'
